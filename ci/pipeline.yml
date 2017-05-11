@@ -4,7 +4,6 @@ resources:
   source:
     uri: https://github.com/urecio/test-cis
     branch: master
-    paths: library1/*
 
 jobs:
 - name: test-app
