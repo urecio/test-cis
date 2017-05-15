@@ -1,5 +1,5 @@
 resources:
-- name: flight-school
+- name: library1
   type: git
   source:
     uri: https://github.com/urecio/test-cis
@@ -10,7 +10,7 @@ resources:
 jobs:
 - name: test-app
   plan:
-  - get: flight-school
+  - get: library1
     trigger: true
   - task: tests
-    file: flight-school/build.yml
+    file: library1/build.yml
